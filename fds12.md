@@ -1,1 +1,1 @@
-Today I Learned - FastCampus Front-end 12
+# Today I Learned - FastCampus Front-end 12
