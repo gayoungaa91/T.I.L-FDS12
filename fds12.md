@@ -2,9 +2,9 @@
 
 ####  HTML & CSS / 김데레사 강사님 (https://github.com/seulbinim)
 
-| 수업 | 관련 태그 | 내용 정리 | 수업 자료 | 
-|:---:|:-----------:|:------:|:-----:| 
-| 1.웹기초 | #웹의역사 #웹표준 #웹접근성 | https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/web-basic.md | https://seulbinim.github.io/WSA |
+| 수업 | 수업 정리 | 관련 태그 | 수업 자료 | 과제 |
+|:--:|:---:|:------:|:----:| :-: |
+| class 01| **[웹기초](https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/web-basic.md)** | #웹의역사 #웹표준 #웹접근성 | https://seulbinim.github.io/WSA | 과제 |
 | 2.웹페이지<br>제작 | 테스트2 | 테스트3 | 테스트3 | 
 | 3.CSS | 테스트2 | 테스트3 | 테스트3 | 
 
