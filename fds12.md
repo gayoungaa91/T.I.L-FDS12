@@ -4,7 +4,7 @@
 
 | 수업 | 관련 태그 | 내용 정리 | 수업 자료 | 
 |:---:|:-----------:|:------:|:-----:| 
-| 1.웹기초 | #웹의역사 #웹표준 #웹접근성 | https://medium.com/salesboost- | https://seulbinim.github.io/WSA |
+| 1.웹기초 | #웹의역사 #웹표준 #웹접근성 | https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/web-basic.md | https://seulbinim.github.io/WSA |
 | 2.웹페이지<br>제작 | 테스트2 | 테스트3 | 테스트3 | 
 | 3.CSS | 테스트2 | 테스트3 | 테스트3 | 
 
