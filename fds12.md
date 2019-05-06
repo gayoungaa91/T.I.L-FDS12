@@ -1,6 +1,6 @@
 # Today I Learned - FastCampus Front-end 12
 
-###  HTML & CSS / 김데레사 강사님 (https://github.com/seulbinim)
+####  HTML & CSS / 김데레사 강사님 (https://github.com/seulbinim)
 
 | 수업 | 관련 태그 | 수업 내용 정리 | 수업 자료 | 수업과제 |
 |:---:|:-----------:|:------:|:-----:| :-----:|
