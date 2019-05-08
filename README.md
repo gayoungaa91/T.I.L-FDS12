@@ -10,6 +10,5 @@
 ## JavaScript 
 | 단원 | 수업 내용 정리 | 자료 | 과제 |
 | :------: | :------------------------:| :-------: | :---------:|
-| 1.자바스크립트란? | []() | 이웅모 강사님 (https://github.com/ungmo2) | [예습] |
-| 2.자바스크립트란? | []() | [poiemaweb](https://poiemaweb.com) | [예습] |
-
+| 1.자바스크립트란? | []() | 이웅모 강사님 (https://github.com/ungmo2) | - |
+| 2.자바스크립트란? | []() | [poiemaweb](https://poiemaweb.com) | - | 
