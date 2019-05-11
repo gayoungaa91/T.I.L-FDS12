@@ -8,7 +8,7 @@
 | 3.CSS | **[#상속 #우선순위 #초기화](https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/css.md)** | [웹표준과 웹접근성](https://seulbinim.github.io/WSA/accessibility.html) | - | 
 
 ## JavaScript 
-| 단원 | 수업 내용 정리 | 자료 | 과제 |
+| 단원 | 수업 내용 정리 | 자료 | 참고 |
 | :------: | :------------------------:| :-------: | :---------:|
 | 1.자바스크립트란? | []() | 이웅모 강사님 (https://github.com/ungmo2) | - |
 | 2.자바스크립트란? | []() | [poiemaweb](https://poiemaweb.com) | - | 
