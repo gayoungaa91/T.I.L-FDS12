@@ -40,7 +40,7 @@ console.log(evenOrOdd(1000)); // Even
 //   }
 //   return count; // 전부 세어놓은 count를 반환합니다.
 // }
-ㄴ
+
 function getCount8(){
   let str = '';
   for( let i = 0; i <= 10000; i++){
