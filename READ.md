@@ -10,5 +10,14 @@
 ## JavaScript
 | part | 수업 | 요약 정리 | 참고자료 & 과제 | 
 |:--:|:--:|:---------:|:---:|
-| 1 |자바스크립트란? | []() | 이웅모 강사님 (https://github.com/ungmo2) | - | 
+| 1 |자바스크립트 | []() | 이웅모 강사님 (https://github.com/ungmo2) | - | 
 | 2 | 변수 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 3 | 제어문 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 4 | 타입 변환과 단축 평가 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 5 | 객체 리터럴 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 6 | 원시값과 객체의 비교 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 7 | 함수 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 8 | 스코프 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 9 | 전역변수의 문제점 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 10 | let,const와 블록 레벨 스코프 | []() | [poiemaweb](https://poiemaweb.com) | - |
+| 11 | 프로퍼티 정의 | []() | [poiemaweb](https://poiemaweb.com) | - |
