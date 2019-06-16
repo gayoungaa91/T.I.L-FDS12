@@ -19,7 +19,7 @@
 | 7 | 제어문 | [#조건문 #반복문]() | [poiemaweb](https://poiemaweb.com) | - |
 | 8 | 타입변환과 단축평가 | [#암묵적 타입변환 #단축평가]() | [poiemaweb](https://poiemaweb.com) | - |
 | 9 | 객체 리터럴 | []() | [poiemaweb](https://poiemaweb.com) | - |
-| 10 | 원시값과 객체의 비교 | [[#passbyvalue$passbyreference]]() | [](https://poiemaweb.com) | - |
+| 10 | 원시값과 객체의 비교 | [[#passbyvalue & passbyreference]]() | []() | - |
 | 11 | 함수 | []() | [poiemaweb](https://poiemaweb.com) | - |
 | 12 | 스코프 | []() | [poiemaweb](https://poiemaweb.com) | - |
 | 13 | 전역 변수의 문제점 | []() | [poiemaweb](https://poiemaweb.com) | - |
