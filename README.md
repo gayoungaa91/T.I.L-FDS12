@@ -3,18 +3,18 @@
 ##  HTML & CSS 
 | part | 수업 | 요약 정리 | 참고자료 & 과제 | 
 |:--:|:--:|:---------:|:---:|
-| 1 | 웹기초 | [#웹의역사 #웹표준 #웹접근성](https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/web-basic.md)** |  김데레사 강사님 (https://github.com/seulbinim) |
+| 1 | 웹기초 | **[#웹의역사 #웹표준 #웹접근성](https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/web-basic.md)** |  김데레사 강사님 (https://github.com/seulbinim) |
 | 2 | 웹페이지 제작 | **[#meta태그 #웹페이지구성(3단vs4단)](https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/webpage.md)** | [webcafe](https://seulbinim.github.io/exHTML5) | 
 | 3 | CSS | **[#상속 #우선순위 #초기화](https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/css.md)** | [웹표준과 웹접근성](https://seulbinim.github.io/WSA/accessibility.html) |
 
 ## JavaScript
 | part | 수업 | 요약 정리 | 참고자료 & 과제 | 
 |:--:|:--:|:---------:|:---:|
-| 1 | 프로그래밍 | []() | 이웅모 강사님 (https://github.com/ungmo2) | - | 
-| 2 | 자바스크립트 | []() | [poiemaweb](https://poiemaweb.com) | - |
-| 3 | 변수 | []() | [poiemaweb](https://poiemaweb.com) | - |
-| 4 | 데이터 타입 | []() | []() | - |
-| 5 | 연산자 | []() | []() | - |
+| 1 | 프로그래밍 | [#프로그래밍이란]() | 이웅모 강사님 (https://github.com/ungmo2) | - | 
+| 2 | 자바스크립트 | [#자바스크립트란]() | [poiemaweb](https://poiemaweb.com) | - |
+| 3 | 변수 | [#변수선언 #변수호이스팅]() | []() | - |
+| 4 | 데이터 타입 | [#값 #리터럴 표기법]() | []() | - |
+| 5 | 연산자 | [#문 # 표현식 #삼항조건 연산자]() | []() | - |
 | 6 | 브라우저 동작원리 | []() | []() | - |
 | 7 | 제어문 | [#조건문 #반복문]() | []() | - |
 | 8 | 타입변환과 단축평가 | [#암묵적 타입변환 #단축평가]() | []() | - |
