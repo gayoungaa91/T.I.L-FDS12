@@ -1,6 +1,6 @@
 # Today I Learned - FastCampus Front-end 12
 
-##  HTML & CSS 
+##  HTML5 & CSS3 
 | part | 수업 | 요약 정리 | 참고자료 & 과제 | 
 |:--:|:--:|:---------:|:---:|
 | 1 | 웹기초 | **[#웹의역사 #웹표준 #웹접근성](https://github.com/gayoungaa91/T.I.L-FDS12/blob/master/html%20%26%20css/web-basic.md)** |  김데레사 강사님 (https://github.com/seulbinim) |
