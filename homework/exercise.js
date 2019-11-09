@@ -41,9 +41,23 @@ for(var i = 9; i >= 1; i-=2){
 
 11. 삼각형 출력하기 - pattern 1
 
+
 12. 삼각형 출력하기 - pattern 2
 
 13. 삼각형 출력하기 - pattern 3
+
+let star = '';
+
+for (let i = 1; i < 6; i++) {
+  star += '\n'
+  // console.log(i);
+  for(let j = 1; j < 7; j++) {
+    if( i < j) 
+    star += '*';
+    // console.log(j);
+  }
+}
+console.log(star);
 
 14. 삼각형 출력하기 - pattern 4
 
