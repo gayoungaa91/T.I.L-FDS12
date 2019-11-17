@@ -8,34 +8,13 @@
 </head>
 <body>
   <script>
-    class Users {
-      constructor() {
-        this.users = [
-          {id: 1, name: 'Lee'},
-          {id: 2, name: 'kim'}
-        ];
-      }
-    // 요소추출
-    findById(id) {
-      return this.users.filter(user => user.id === id);
-    }
+    const values = [1, 2, 3, 4, 5, 6];
 
-    // 요소제거
-    remove(id) {
-      this.users = this.users.filter(user => user.id !== id);
-    }
-    }
+    const average = values.reduce((pre, cur, i, self) => {
+      return i === self.length - 1 ? (pre + cur) / self.length : pre + cur;
+    }, 0);
 
-    const users = new Users();
-
-    let user = users.findById(1);
-    console.log(user);
-
-    users.remove(1);
-
-    user = users.findById(1);
-    console.log(user);
-
+    // console.log(average);
   </script>
 </body>
 </html>
