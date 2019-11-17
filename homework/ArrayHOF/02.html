@@ -8,13 +8,11 @@
 </head>
 <body>
   <script>
-    const values = [1, 2, 3, 4, 5, 6];
+    // let result =[5, 10, 15].some(item => item > 10);
 
-    const average = values.reduce((pre, cur, i, self) => {
-      return i === self.length - 1 ? (pre + cur) / self.length : pre + cur;
-    }, 0);
+    result = ['apple', 'banana', 'orange'].some(item => item === 'mango');
+    console.log(result);
 
-    // console.log(average);
   </script>
 </body>
 </html>
