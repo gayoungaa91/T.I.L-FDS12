@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>특정 프로퍼티 값 추출</title>
+</head>
+<body>
+  <script>
+    const todos = [
+    { id: 3, content: 'HTML', completed: false },
+    { id: 2, content: 'CSS', completed: true },
+    { id: 1, content: 'Javascript', completed: false }
+    ];
+
+
+    function getValues(key) {
+      return function (a, b) {
+        return a[key] > b[key] ? 1 : (a[key] < b[key] ? -1 : 0);
+      };
+    }
+
+    todos.sort(getValues('content'));
+    // console.log(getValues('content'));
+    console.log(todos);
+  </script>
+</body>
+</html>
