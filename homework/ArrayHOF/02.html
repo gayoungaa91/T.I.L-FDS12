@@ -8,10 +8,8 @@
 </head>
 <body>
   <script>
-    // let result =[5, 10, 15].some(item => item > 10);
-
-    result = ['apple', 'banana', 'orange'].some(item => item === 'mango');
-    console.log(result);
+    let every = [5, 10, 15].every(item => item > 10, this);
+    console.log(this);
 
   </script>
 </body>
