@@ -8,11 +8,23 @@
 </head>
 <body>
   <script>
-   let fil =  [1, 2, 4, 4].filter(item => item === 4);
-   console.log(fil);
+    const users = [
+  { id: 1, name: 'Lee' },
+  { id: 2, name: 'Kim' },
+  { id: 2, name: 'Choi' },
+  { id: 3, name: 'park' }
+  ];
 
-   let fine = [1, 2, 4, 4].find(item => item === 4);
-   console.log(fine);
+  function predicate(key, value) {
+    return item => item[key] === value;
+  }
+
+  let index = users.findIndex(predicate('id', 2));
+
+  console.log(index);
+  index = users.findIndex(predicate('name', 'park'));
+
+  
   </script>
 </body>
 </html>
