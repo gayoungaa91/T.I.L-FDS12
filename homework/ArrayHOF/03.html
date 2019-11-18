@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>프로퍼티 정렬</title>
+</head>
+<body>
+  <script>
+
+    const todos = [
+      { id: 3, content: 'HTML', completed: false },
+      { id: 2, content: 'CSS', completed: true },
+      { id: 1, content: 'Javascript', completed: false }
+    ];
+
+    function sortBy(key) {
+      let arrange = [];
+
+      // return arrange = todos.sort()
+
+        return function (a, b) {
+      // 프로퍼티 값이 문자열인 경우, - 산술 연산으로 비교하면 NaN이 나오므로 비교 연산을 사용한다.
+         return arrange = todos.sort(a[key] > b[key] ? 1 : (a[key] < b[key] ? -1 : 0));
+          // return arrange = todos.sort(key);
+                      
+      };
+      
+    }
+    
+
+    console.log(sortBy('id'));
+    /*
+    [
+      { id: 1, content: 'Javascript', completed: false },
+      { id: 2, content: 'CSS', completed: true },
+      { id: 3, content: 'HTML', completed: false }
+    ]
+    */
+    console.log(sortBy('content'));
+    /*
+    [
+      { id: 2, content: 'CSS', completed: true },
+      { id: 3, content: 'HTML', completed: false },
+      { id: 1, content: 'Javascript', completed: false }
+    ]
+    */
+    console.log(sortBy('completed'));
+    /*
+    [
+      { id: 3, content: 'HTML', completed: false },
+      { id: 1, content: 'Javascript', completed: false },
+      { id: 2, content: 'CSS', completed: true }
+    ]
+    */
+  </script>
+</body>
+</html>
