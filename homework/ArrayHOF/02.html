@@ -8,21 +8,33 @@
 </head>
 <body>
   <script>
-    const users = [
-  { id: 1, name: 'Lee' },
-  { id: 2, name: 'Kim' },
-  { id: 2, name: 'Choi' },
-  { id: 3, name: 'park' }
-  ];
+    const todos = [
+      { id: 3, content: 'HTML', completed: false },
+      { id: 2, content: 'CSS', completed: true },
+      { id: 1, content: 'Javascript', completed: false }
+    ];
 
-  function predicate(key, value) {
-    return item => item[key] === value;
-  }
+    function getValues(key) {
+      let result = [];
 
-  let index = users.findIndex(predicate('id', 2));
+      // return result = todos.filter( item => item.key === item.key);
+      todos.filter( item => {
+      item.key === key
+      return result = item.key
+      });
+      
 
-  console.log(index);
-  index = users.findIndex(predicate('name', 'park'));
+    }
+
+    console.log(getValues('id')); // [3, 2, 1]
+    console.log(getValues('content')); // [ 'HTML', 'CSS', 'Javascript' ]
+    console.log(getValues('completed')); 
+
+    // key가 문자타입이 맞지않아서?
+    // 변수에 담지 않아서??
+    // return result = todos.filter( item => item.key === item.key);
+    // item.key === todos란 소리잖아
+    // item.key가 결국 return 되야 하자나?
 
   
   </script>
