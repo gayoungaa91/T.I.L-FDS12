@@ -15,16 +15,23 @@
     ];
 
     function toggleCompletedById(id) {
-      // // [...todos]
-      // todos = [{...todos}]
-      // // console.log(todos.completed);
-      // return todos.completed
       todos = todos.map(item => {
-        // return item.completed = true 
-        item.id === id
-        return todos
+        if(id === item.id) {
+          return todos = [todos, {...item, completed: !item.completed}];
+        }
+        
       })
     }
+
+    // function toggleCompletedById(id) {
+    //   todos = todos.map(item => {
+    //     if(item.id === id) 
+    //       {...item, completed: !item.completed}
+    //     }
+    //   })
+    //   return todos;
+    // }
+
 
     toggleCompletedById(2);
 
