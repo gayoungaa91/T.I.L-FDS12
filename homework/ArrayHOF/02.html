@@ -14,18 +14,18 @@
       { id: 1, content: 'Javascript', completed: false }
     ];
 
-    // function getValues(key) {
-    //   let result = [];
+    function getValues(key) {
+      let result = [];
 
-    //   // return result = todos.filter( item => item.key === item.key);
-    //   todos.filter( item => {
-    //   // return item[key] === key
-    //   // console.log(item[key] === key);
-    //   console.log([item.key]);
-    //   });
+      // return result = todos.filter( item => item.key === item.key);
+      todos.filter( item => {
+      // return item[key] === key
+      // console.log(item[key] === key);
+      console.log([item.key]);
+      });
       
 
-    // }
+    }
 
     function getValues(key) {
       let result = [];
@@ -39,17 +39,29 @@
       // return item[key]
 
     } 
-    console.log(getValues('id')); // [3, 2, 1]
-    console.log(getValues('content')); // [ 'HTML', 'CSS', 'Javascript' ]
-    console.log(getValues('completed')); 
 
-    // key가 문자타입이 맞지않아서?
-    // 변수에 담지 않아서??
-    // return result = todos.filter( item => item.key === item.key);
-    // item.key === todos란 소리잖아
-    // item.key가 결국 return 되야 하자나?
 
   
+    function getValues(key) {
+      let result = [];
+      result = todos.map(item => item[key]);
+      return result;
+    }
+
+    console.log(getValues('id')); // [3, 2, 1]
+    console.log(getValues('content')); // [ 'HTML', 'CSS', 'Javascript' ]
+    console.log(getValues('completed'));
+
+
+
+
+
+
+
+
+
+
+
   </script>
 </body>
 </html>
