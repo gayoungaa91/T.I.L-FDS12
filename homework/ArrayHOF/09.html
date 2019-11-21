@@ -15,10 +15,12 @@
   ];
 
   function getMaxId() {
-
+    todos = todos.map(item => item.id);
+    return Math.max(...todos);
   }
 
   console.log(getMaxId()); // 3
+
   </script>
 </body>
 </html>
