@@ -7,3 +7,15 @@
 
 
 
+### DOM Query / Traversing (요소에의 접근)
+
+
+
+#### 여러개의 요소 노트 선택
+
+##### 	`[document.getElementsByClassName(class)]`
+
+- 반환값은 HTMLCollection이다.
+- 복수인경우, 배열과 비슷한 사용법인 객체 **유사배열** 이다.
+- 실시간으로 Node의 상태변경을 반영한다,
+- 
