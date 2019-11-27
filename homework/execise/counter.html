@@ -38,11 +38,22 @@
     <div class="counter">0</div>
     <button class="decrease">-</button>
   </div>
-
+  
   <script>
     const $increase = document.querySelector('.increase');
     const $counter = document.querySelector('.counter');
     const $decrease = document.querySelector('.decrease');
+
+      let num = 0;
+      $increase.addEventListener('click', () => {
+      let change = $counter.innerHTML = ++num;
+      });
+      $decrease.addEventListener('click', () => {
+        if (num > 0) {
+          change = $counter.innerHTML = --num;
+        }
+      });
+    
   </script>
 </body>
 </html>
