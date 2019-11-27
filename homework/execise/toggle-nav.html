@@ -65,7 +65,29 @@
     </div>
   </div>
   <script>
-    a
+    const $toggle = document.querySelector('.toggle');
+    const $container = document.querySelector('.container');
+    
+    // $toggle.addEventListener('click', () => {
+    //   $container.className = 'active';
+    //   if (!$toggle.hasAttribute('active')) {
+    //     // $toggle.removeAttribute('active')
+        
+    //   }
+    //     console.log($toggle.hasAttribute('active'))
+      
+      
+    // })
+
+    $toggle.addEventListener('click', () => {
+      if ($container.className !== 'active') {
+        $container.className = 'active'
+      } else { $container.className = 'container'}
+      console.log($container);
+    });
+
+
+
   </script>
 </body>
 </html>
