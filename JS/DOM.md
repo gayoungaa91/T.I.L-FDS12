@@ -116,5 +116,11 @@
 
 
 
+> Window 프로퍼티 
+- Window.pageYOffset : `scrollY` 의 다른이름, 문서가 수직으로 얼마나 스크롤됐는지 픽셀 단위로 반환한다. 둘다 사용 가능하다.
+- Window.scrollTo() : 문서의 지정된 위치로 스크롤 한다.
+- Window.scroll() : 창을 문서의 특정 위치로 스크롤 한다.
+
+
 
 
