@@ -19,7 +19,20 @@
       font-weight: 300;
       text-align: center;
     }
-
+    .popup {
+      background-color: #fff;
+      width: 550px;
+      /* visibility: hidden; */
+      display: none;
+      position: absolute;
+      top: 25%; left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 15px;
+    }
+    .btn-close {
+      position: absolute;
+      top: 8%; right: 2%;
+    }
     /* CSS 작성 바랍니다. */
   </style>
 </head>
@@ -40,6 +53,30 @@
 
   <p class="popup-message"></p>
   <script>
+    const $popUp = document.querySelector('.popup');
+    const $btnPopup = document.querySelector('.toggle-popup');
+    let $input = document.querySelector('input');
+    const $btnOk = document.querySelector('.btn-ok');
+    let $msg = document.querySelector('.popup-message');
+    const $btnClose = document.querySelector('.btn-close');
+    const $btnCancel = document.querySelector('.btn-cancel');
+
+    $btnPopup.addEventListener('click', () => {
+      $popUp.style.display = 'none' ? 'block' : 'none';
+    });
+
+    $btnOk.addEventListener('click', () => {
+        $msg.textContent = `from popup : ${$input.value}`;
+    })
+
+    $btnClose.addEventListener('click', () => {
+      $popUp.style.display = 'none';
+    })
+
+    $btnCancel.addEventListener('click', () => {
+      $popUp.style.display = 'none';
+    })
+
 
   </script>
 </body>
