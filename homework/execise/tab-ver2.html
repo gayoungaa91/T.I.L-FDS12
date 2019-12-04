@@ -113,29 +113,11 @@
           (e.g. functional programming) styles.`
       }
     ];
-    
-
-    // const $tab = document.querySelector('.tab');
-    // let $tabContent = document.querySelector('.tab-content')
-    // let $ul = document.querySelector('ul');
-    // // console.log($ul)
-      
-    // $tab.addEventListener('click', (e) => {
-    //   console.log(e.target);
-    //   tabs.forEach (tab => {
-    //     $tabContent.innerHTML += `<li>${tab.content}</li>`
-    //   })
-    // })
 
     const $tabs = document.querySelector('.tabs');
     const ul = document.createElement('ul');
     const tabGroup = document.createElement('div');
-    // let a;
-    let li = ul.children
-    // const li = ul.children
-    // console.dir([...li]);
-    console.dir(li);
-
+  
     // tab content div 생성 (DOM생성)
     $tabs.appendChild(ul);
     tabGroup.className = 'tab-content-group';
@@ -143,31 +125,38 @@
     
     // innerHTML 프로퍼티
     tabs.forEach((tab) => {
-      a = ul.innerHTML += `<li id=${tab.id} class="tab active">
+      ul.innerHTML += `<li id=${tab.id} class="tab">
         <i class="${tab.iconClass}"></i>${tab.title}
         </li>`
       tabGroup.innerHTML += `<div class="tab-content">${tab.content}</div>`
-      // console.log(tab);
     })
-  
-    // li.addEventListener('click', () => {
-    //   console.log('hello');
-    // })
+
+    // const lis = ul.child
+    const lis = ul.getElementsByClassName('tab');
+
+    // default css active
+    [...lis][0].className = 'tab active'
+    
+    // !(tabGroup.firstChild.style.display) = 'none';
+    // (tabGroup.firstChild.style.display = 'block' ? 'none' : 'block');
+   
+
+
+
+
+
+
+    ul.addEventListener('click', (e) => {
+      // console.log(e.target )
+      [...lis].forEach(li => li.className = 'tab active')
+      console.log([...lis])
+      
+    })
 
     
 
-    // console.log($tabs);
+    console.log($tabs);
     
-
-
-    // DOM 조작방식
-    // const elem = document.createElement('li');
-    // const icon = document.createElement('i');
-    // const txt = document.createTextNode('HTML5');
-    // elem.appendChild(icon);
-    // elem.appendChild(txt);
-    // $tabs.appendChild(elem);
-    // console.log($tabs);
   </script>
 </body>
 </html>
