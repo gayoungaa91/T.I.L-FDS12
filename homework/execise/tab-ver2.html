@@ -136,12 +136,16 @@
 
     // default css active
     [...lis][0].className = 'tab active'
+    console.log(lis)
     
-    // !(tabGroup.firstChild.style.display) = 'none';
-    // (tabGroup.firstChild.style.display = 'block' ? 'none' : 'block');
+
+    // tabGroup.firstChild.style.display = 'none'? 'block' : 'none';
+    tabGroup.style.display = 'none';
+    tabGroup.firstChild.style.display = 'block';
+  
    
 
-
+  
 
 
 
