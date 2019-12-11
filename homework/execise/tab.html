@@ -122,46 +122,39 @@
     let tabContentGroup = document.createElement('div');
     $tabs.appendChild(tabContentGroup);
     
-    tab.forEach((item) => {
-      ul.innerHTML += `<li id=${item.id} class="tab">
-        <i class="icon ${item.iconClass}"></i>
-        ${item.title}</li>`
-        
-        tabContentGroup.innerHTML += `<div class="tab-content" id=${item.id}>${item.content} 
-          </div>`
-        })
-        
-    const icon = document.querySelector('.icon');
-  
-    
-    const li = document.getElementsByClassName('tab');
-    // [...li][0].className = 'tab active';
-    let tabContent = document.getElementsByClassName('tab-content');
-    
-    function render() {
-      // let html = '';
-
-      // html = 
-
-      tabContentGroup.innerHTML = '';
-      // [...tabContent][3].style.display = 'none';
-      // [...tabContent][0].style.display = 'none';
-      // tabContentGroup = '';
-    }
-    
     render();
+
+    function render() {
+      // ul.innerHTML = '';
+      tab.forEach((item) => {
+        ul.innerHTML += `<li id=${item.id} class="tab">
+          <i class="icon ${item.iconClass}"></i>
+          ${item.title}</li>`
+          
+          tabContentGroup.innerHTML += `<div class="tab-content" id=${item.id}>${item.content} 
+            </div>`
+      }) 
+    }
+      
+      
+      const icon = document.querySelector('.icon');
+      const li = document.getElementsByClassName('tab');
+      [...li][0].className = 'tab active';
+      let tabContent = document.getElementsByClassName('tab-content');
+      
+
 
 
     ul.addEventListener('click', (e) => {
       [...li].forEach((item) => {
         e.target.id === item.id ? item.className = 'tab active' : item.className = 'tab';
         // console.log([...tabContent][item.id].style.display = 'block')
+      });
+      [...tabContent].forEach((item) => {
+        e.target.id === item.id ? ([...tabContent][1].style.display = 'block') : item.style.display = 'none';
+        console.log([...tabContent][1])
+        e.target.id === item.id ? item[item.id].style.display = 'block' : item.style.display = 'nones';
       })
-      // [...tabContent].forEach((item) => {
-      //   e.target.id === item.id ? ([...tabContent][1].style.display = 'block') : item.style.display = 'none';
-      //   console.log([...tabContent][1])
-        // e.target.id === item.id ? item[item.id].style.display = 'block' : item.style.display = 'nones';
-      // })
       
       // [...li].forEach((item) => {
       //   e.target.id === item.id ?  item.className = 'tab active' && ([...tabContent][item.id].style.display = 'block') : 2
@@ -185,7 +178,7 @@
 
 
     console.log($tabs)
-
+    
 
   </script>
 </body>
