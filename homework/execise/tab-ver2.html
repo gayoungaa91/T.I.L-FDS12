@@ -117,6 +117,7 @@
     const $tabs = document.querySelector('.tabs');
     const ul = document.createElement('ul');
     const tabGroup = document.createElement('div');
+   
   
     // tab content div 생성 (DOM생성)
     $tabs.appendChild(ul);
@@ -133,30 +134,25 @@
 
     // const lis = ul.child
     const lis = ul.getElementsByClassName('tab');
- 
+
+   
+    // [...lis].addEventListener('click', (e) => {
+    //   // console.log(12);
+    // });
+    // console.log([...lis])
 
     
-
-    
-    
-
-
-
-
-
-
-
 
 
     // default css active
     // [...lis][0].className = 'tab active'
-    // console.log(li[0])
+    // console.log(lis[0])
     
-    const tabContent = tabGroup.children;
-    console.log(tabContent)
-    // tabGroup.firstChild.style.display = 'none'? 'block' : 'none';
-    // tabGroup.style.display = 'none';
-    tabContent.display = 'none';
+    // const tabContent = tabGroup.children;
+    // console.log(tabContent)
+    // // tabGroup.firstChild.style.display = 'none'? 'block' : 'none';
+    // // tabGroup.style.display = 'none';
+    // tabContent.display = 'none';
   
     // tabs.forEach((tab) => {
     //   for(let i = 0; i <= tabs.length; i++) {
@@ -167,16 +163,16 @@
   
   
 
-    // li.addEventListener('click', (e) => {
-    //   tabs.forEach((tab) => {
-    //     [...lis].forEach((li) => {
-    //       if(li.id === tab.id) {
-    //         li.className = 'tab active'
-    //       }
-    //     console.log(li.id)
-    //     });
-    //   })
-    // })
+    ul.addEventListener('click', (e) => {
+      tabs.forEach((tab) => {
+        [...lis].forEach((li) => {
+          if(li.id === tab.id) {
+            li.className = 'tab active'
+          }
+        console.log(li.id)
+        });
+      })
+    })
 
 
     console.log($tabs);
