@@ -122,64 +122,43 @@
     let tabContentGroup = document.createElement('div');
     $tabs.appendChild(tabContentGroup);
     
-    render();
-
+    tab.forEach((item) => {
+      ul.innerHTML += `<li id=${item.id} class="tab">
+        <i class="icon ${item.iconClass}" id=${item.id}></i>
+        ${item.title}</li>`
+        
+        tabContentGroup.innerHTML += `<div class="tab-content" id=${item.id} style="display: none;">${item.content} 
+          </div>`
+      
+    }) 
+    
+    const icon = document.querySelector('.icon');
+    const li = document.getElementsByClassName('tab');
+    let tabContent = document.getElementsByClassName('tab-content');
+    
     function render() {
-      // ul.innerHTML = '';
-      tab.forEach((item) => {
-        ul.innerHTML += `<li id=${item.id} class="tab">
-          <i class="icon ${item.iconClass}"></i>
-          ${item.title}</li>`
-          
-          tabContentGroup.innerHTML += `<div class="tab-content" id=${item.id}>${item.content} 
-            </div>`
-      }) 
-    }
-      
-      
-      const icon = document.querySelector('.icon');
-      const li = document.getElementsByClassName('tab');
       [...li][0].className = 'tab active';
-      let tabContent = document.getElementsByClassName('tab-content');
-      
-
-
+      [...tabContent][0].style.display = 'block';
+    }
+    
+    render(); 
 
     ul.addEventListener('click', (e) => {
+      console.log(e.target);
       [...li].forEach((item) => {
         e.target.id === item.id ? item.className = 'tab active' : item.className = 'tab';
-        // console.log([...tabContent][item.id].style.display = 'block')
       });
-      [...tabContent].forEach((item) => {
-        e.target.id === item.id ? ([...tabContent][1].style.display = 'block') : item.style.display = 'none';
-        console.log([...tabContent][1])
-        e.target.id === item.id ? item[item.id].style.display = 'block' : item.style.display = 'nones';
+ 
+      [...tabContent].forEach((item, index) => {
+        e.target.id === item.id ? item.style.display = 'block' : item.style.display = 'none';
       })
+
       
-      // [...li].forEach((item) => {
-      //   e.target.id === item.id ?  item.className = 'tab active' && ([...tabContent][item.id].style.display = 'block') : 2
-      // })
-
-      // [...li].forEach((item) => {
-      //   if (e.target.id === item.id) {
-      //     item.className = 'tab active'
-      //     ([...tabContent][item.id].style.display = 'block')
-      //   } else { item.className = 'tab'}
-      // })
-
     }) 
 
-    
-    // for(let i = 1; i < 4; i++) {
-    //   if(e.target.id === ) {
-    //     [i].style.display = block;
-    //   }
-    // }
-
-
     console.log($tabs)
+    console.log(icon)
     
-
   </script>
 </body>
 </html>
