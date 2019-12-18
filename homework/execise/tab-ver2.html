@@ -60,8 +60,9 @@
   </style>
 </head>
 <body>
-  <div id="ho" class="tabs">
-<!-- <ul class="tab-group">
+  <div class="tabs">
+    <!--
+    <ul class="tab-group">
       <li id="1" class="tab active">
         <i class="icon fab fa-html5"></i>HTML
       </li>
@@ -73,16 +74,29 @@
       </li>
     </ul>
     <div class="tab-content-group">
-      <div class="tab-content"> -->
-        <!-- <strong>HTML(HyperText Markup Language)</strong> is the most basic building block of the Web.
-        It describes and defines the content of a webpage along with the basic layout ossf the webpage.
+      <div class="tab-content">
+        <strong>HTML(HyperText Markup Language)</strong> is the most basic building block of the Web.
+        It describes and defines the content of a webpage along with the basic layout of the webpage.
         Other technologies besides HTML are generally used to describe a web page's
         appearance/presentation(CSS) or functionality/ behavior(JavaScript).
-      </div> -->
+      </div>
     </div>
+    -->
   </div>
   <script>
-        const tabs = [
+  class Tab {
+    constructor(tabsData) {
+      this.tabsData = tabsData;
+      this.tabState = 1; // tab id
+
+      // do someting
+    }
+
+    // do someting
+  }
+
+  window.onload = function () {
+    const tab = new Tab([
       {
         id: 1,
         title: 'HTML',
@@ -112,71 +126,8 @@
           dynamic language, supporting object-oriented, imperative, and declarative
           (e.g. functional programming) styles.`
       }
-    ];
-
-    const $tabs = document.querySelector('.tabs');
-    const ul = document.createElement('ul');
-    const tabGroup = document.createElement('div');
-   
-  
-    // tab content div 생성 (DOM생성)
-    $tabs.appendChild(ul);
-    tabGroup.className = 'tab-content-group';
-    $tabs.appendChild(tabGroup);
-    
-    // innerHTML 프로퍼티
-    tabs.forEach((tab) => {
-      ul.innerHTML += `<li id=${tab.id} class="tab">
-        <i class="${tab.iconClass}"></i>${tab.title}
-        </li>`
-      tabGroup.innerHTML += `<div id=${tab.id} class="tab-content">${tab.content}</div>`
-    })
-
-    // const lis = ul.child
-    const lis = ul.getElementsByClassName('tab');
-
-   
-    // [...lis].addEventListener('click', (e) => {
-    //   // console.log(12);
-    // });
-    // console.log([...lis])
-
-    
-
-
-    // default css active
-    // [...lis][0].className = 'tab active'
-    // console.log(lis[0])
-    
-    // const tabContent = tabGroup.children;
-    // console.log(tabContent)
-    // // tabGroup.firstChild.style.display = 'none'? 'block' : 'none';
-    // // tabGroup.style.display = 'none';
-    // tabContent.display = 'none';
-  
-    // tabs.forEach((tab) => {
-    //   for(let i = 0; i <= tabs.length; i++) {
-    //     if(([...lis][i])['id'] || ([...tabContent][i])['id'] == tab.id) { 
-    //     }
-    //   } 
-    // })
-  
-  
-
-    ul.addEventListener('click', (e) => {
-      tabs.forEach((tab) => {
-        [...lis].forEach((li) => {
-          if(li.id === tab.id) {
-            li.className = 'tab active'
-          }
-        console.log(li.id)
-        });
-      })
-    })
-
-
-    console.log($tabs);
-    
+    ]);
+  };
   </script>
 </body>
 </html>
