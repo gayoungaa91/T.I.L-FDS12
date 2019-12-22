@@ -1,5 +1,5 @@
 ## yanolja clone project 
-### 야놀자 front-end repo: https://github.com/gayoungaa91/yanolja-frontend
+### 야놀자 front-end repo https://github.com/gayoungaa91/yanolja-frontend
 ### 야놀자 클론 http://yanoljamvp.com/
 
 #### 야놀자 사이트 클론
