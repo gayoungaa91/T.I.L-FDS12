@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  overflow-y: hidden;
+}
+
+#bg {
+  margin: 0px;
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  background: url("pokemon/pokemonBG2.jpg");
+  background-size: cover;
+}
+
+#bg h1 {
+  text-align: center;
+  font-family: "yg-jalnan";
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+#gamebg {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 1000px;
+  min-width: 1000px;
+}
+
+.flex {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+#fireworkDiv {
+  position: absolute;
+  background: black;
+  opacity: 0.7;
+}
+
+#fireworkDiv h1 {
+  color: white;
+}
+
+.score {
+  min-width: 400px;
+  max-width: 400px;
+  height: 700px;
+  border: 1px solid yellow;
+  margin-right: 200px;
+  background: white;
+  opacity: 0.7;
+  font-family: "yg-jalnan";
+  font-size: 36px;
+}
+.score p {
+  text-align: center;
+}
+.time {
+  font-size: 36px;
+  text-align: center;
+}
+
+.timeScore {
+  background: yellow;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.card {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  perspective: 350px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front {
+  background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+  opacity: 0.7;
+}
+
+.card-back {
+  background: yellow;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid black;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.fireworks {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+.fireworks .firework {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 0px 50px;
+}
+.fireworks .firework:before {
+  content: "";
+  display: block;
+  border-radius: 5px;
+  background-color: skyblue;
+  width: 5px;
+  height: 0px;
+  will-change: transform;
+  transform: translateY(1000px);
+  animation: fireworkstart 3s ease-out infinite;
+}
+.fireworks .firework .explosion {
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 20px;
+  opacity: 0;
+  transform-origin: top center;
+  will-change: transform;
+  animation: explosion 0.7s linear 3s infinite;
+}
+.fireworks .firework .explosion:nth-child(1) {
+  transform: rotate(0deg);
+}
+.fireworks .firework .explosion:nth-child(2) {
+  transform: rotate(90deg);
+}
+.fireworks .firework .explosion:nth-child(3) {
+  transform: rotate(180deg);
+}
+.fireworks .firework .explosion:nth-child(4) {
+  transform: rotate(-90deg);
+}
+.fireworks .firework .explosion:nth-child(5) {
+  transform: rotate(45deg);
+}
+.fireworks .firework .explosion:nth-child(6) {
+  transform: rotate(-45deg);
+}
+.fireworks .firework .explosion:nth-child(7) {
+  transform: rotate(135deg);
+}
+.fireworks .firework .explosion:nth-child(8) {
+  transform: rotate(225deg);
+}
+
+.fireworks .firework .explosion .spark {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  will-change: transform;
+  animation: explosion2 0.7s ease-in-out 3s infinite;
+}
+
+.fireworks .firework .explosion .spark.red {
+  background-color: #e91e63;
+}
+.fireworks .firework .explosion .spark.blue {
+  background-color: skyblue;
+}
+.fireworks .firework .explosion .spark.green {
+  background-color: limegreen;
+}
+.fireworks .firework .explosion .spark.yellow {
+  background-color: yellow;
+}
+.fireworks .firework .explosion .spark.purple {
+  background-color: purple;
+}
+@keyframes fireworkstart {
+  0% {
+      height: 0px;
+      transform: translateY(1000px);
+  }
+  50% {
+      height: 50px;
+  }
+  75% {
+      height: 30px;
+  }
+  100% {
+      height: 0;
+      transform: translateY(0);
+  }
+}
+
+@keyframes explosion {
+  0% {
+      height: 0px;
+      opacity: 0;
+  }
+  50% {
+      height: 25px;
+      opacity: 1;
+  }
+  100% {
+      height: 0px;
+      opacity: 0;
+  }
+}
+@keyframes explosion2 {
+  0% {
+      transform: translateY(0px);
+  }
+  50% {
+      transform: translateY(5px);
+  }
+  75% {
+      transform: translateY(50px);
+  }
+  100% {
+      transform: translateY(70px);
+  }
+}
