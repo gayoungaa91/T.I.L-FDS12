@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>cardgame</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+    body {
+      background-color: #eee;
+    }
+    .cardGame {
+      background-color: powderblue;
+      /* position: flex;
+      align-content: center; */
+      width: 411px;
+      padding: 20px;
+      margin: 50px auto 0;
+    }
+    .cardRow {
+    }
+    .cardBox {
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      margin: 10px;
+      display: inline-block;
+      font-size: 20px;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    h1{
+      text-align: center;
+      margin: 150px auto 0;
+    }
+
+    .flex {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>HELLO CARD GAME :)</h1>
+  <div class="cardGame">
+    <div class="cardRow">
+      <!-- <div class="cardBox">1</div>
+      <div class="cardBox">2</div>
+      <div class="cardBox">3</div> -->
+    </div>
+    <div class="cardRow">
+      <!-- <div class="cardBox">4</div>
+      <div class="cardBox">5</div>
+      <div class="cardBox">6</div> -->
+    </div>
+    <div class="cardRow">
+      <!-- <div class="cardBox">7</div>
+      <div class="cardBox">8</div>
+      <div class="cardBox">9</div> -->
+    </div>
+  </div>
+  <script>
+    const cardRow = document.querySelector('.cardRow');
+
+    function render() {
+      const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+      //1. for문
+      let randomNum = new Array();
+      for(let i = 1; i < 10; i++) {
+        let num = Math.floor(Math.random() * 10 + 1);
+        randomNum.push(num)
+        console.log(randomNum)
+        cardRow.innerHTML += `
+          <div class="cardBox">${randomNum}</div>
+        `
+      // }
+      //     let randomNum = [];
+      //   nums.forEach((num) => {
+      //     randomNum = Math.floor(Math.random() * 10 + 1); 
+      //     console.log(randomNum)
+
+      //     cardRow.innerHTML += `
+      //       <div class="cardBox">${num}</div>
+      //     `
+        }
+      // num.innerHTML = `
+      // <div class="cardBox">1</div>
+      // <div class="cardBox">1</div>
+      // <div class="cardBox">1</div>
+      // <div class="cardBox">1</div>
+      // <div class="cardBox">1</div>
+      // <div class="cardBox">1</div>
+      // <div class="cardBox">1</div>
+      // <div class="cardBox">1</div>
+      // <div class="cardBox">1</div>
+      // `;
+    }
+    render();
+  </script>
+</body>
+</html>
