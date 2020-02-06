@@ -73,38 +73,26 @@
 
     function render() {
       const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-      //1. for문
-      let randomNum = new Array();
-      for(let i = 1; i < 10; i++) {
-        let num = Math.floor(Math.random() * 10 + 1);
-        randomNum.push(num)
-        console.log(randomNum)
-        cardRow.innerHTML += `
-          <div class="cardBox">${randomNum}</div>
-        `
+      let renderNum = new Array();
+      const picNum = 9;
+                 
+      // for (let randomNum = 1; randomNum < picNum; randomNum++) {
+      //   renderNum[randomNum] = Math.floor(Math.random() * 10 + 1);
+          
+      //       cardRow.innerHTML += `
+      //       <div class="cardBox">
+      //       ${renderNum}
+      //       </div>
+      //       ` 
       // }
-      //     let randomNum = [];
-      //   nums.forEach((num) => {
-      //     randomNum = Math.floor(Math.random() * 10 + 1); 
-      //     console.log(randomNum)
+      
+  
+          
+      } 
 
-      //     cardRow.innerHTML += `
-      //       <div class="cardBox">${num}</div>
-      //     `
-        }
-      // num.innerHTML = `
-      // <div class="cardBox">1</div>
-      // <div class="cardBox">1</div>
-      // <div class="cardBox">1</div>
-      // <div class="cardBox">1</div>
-      // <div class="cardBox">1</div>
-      // <div class="cardBox">1</div>
-      // <div class="cardBox">1</div>
-      // <div class="cardBox">1</div>
-      // <div class="cardBox">1</div>
-      // `;
-    }
+    
     render();
+    
   </script>
 </body>
 </html>
