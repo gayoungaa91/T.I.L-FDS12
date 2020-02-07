@@ -70,27 +70,26 @@
   </div>
   <script>
     const cardRow = document.querySelector('.cardRow');
-
-    function render() {
-      const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-      let renderNum = new Array();
-      const picNum = 9;
-                 
-      // for (let randomNum = 1; randomNum < picNum; randomNum++) {
-      //   renderNum[randomNum] = Math.floor(Math.random() * 10 + 1);
-          
-      //       cardRow.innerHTML += `
-      //       <div class="cardBox">
-      //       ${renderNum}
-      //       </div>
-      //       ` 
-      // }
-      
-  
-          
-      } 
-
+    const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    // renderNum = (num !== nums) ? nums.push(num);
     
+    function render() {
+      let renderNum = new Array();
+      // const picNum = 10;
+                 
+      let num = Math.floor(Math.random() * 10 + 1) 
+      for (num; num.length = 9; num++) {
+        console.log(num)
+        for(let compareNum = 1; compareNum < 10; compareNum++) {
+          // console.log(compareNum)
+        }
+          // cardRow.innerHTML += `
+          // <div class="cardBox">
+          //   ${nums}
+          // </div>
+          // ` 
+      }      
+    }  
     render();
     
   </script>
