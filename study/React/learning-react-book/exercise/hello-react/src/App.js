@@ -1,20 +1,10 @@
-import React, { useState } from 'react';
-import Info from './Info';
+import React from 'react';
+import EventPractice from './EventPractice';
 
 const App = () => {
-  const [visible, setvisible] = useState(false);
+  // const [visible, setvisible] = useState(false);
   return (
-    <div>
-      <button
-        onClick = {() => {
-          setvisible(!visible);
-        }}
-      >
-        {visible ? '숨기기' : '보이기'}
-      </button>
-      <hr />
-      {visible && <Info />}
-    </div>
+    <EventPractice />
   );
 };
 
