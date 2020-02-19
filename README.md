@@ -7,8 +7,10 @@
   
 - JS
   - poiema 블로그 참고하여 정리
+  - fastcampus 수업중 배운 내용 정리
   
 - HTML5 & CSS
+  - fastcampus 수업중 배운 내용 정리
 
 
 ## project
