@@ -1,4 +1,4 @@
-## 1.yanolja clone project 
+## yanolja clone project 
 야놀자 front-end repo https://github.com/gayoungaa91/yanolja-frontend<br>
 야놀자 project site http://yanoljamvp.com/
 
@@ -12,5 +12,3 @@
 #### 담당 페이지
 - 마이페이지와 회원정보수정 페이지
 - 예약 내역 페이지와 예약 상세 내역 페이지
-
-## 1.yanolja clone project 
