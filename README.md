@@ -14,6 +14,11 @@
 
 
 ## project
-- 야놀자 클론 프로젝트 https://github.com/gayoungaa91/yanolja-frontend / http://yanoljamvp.com/
-- 카드 맞추기 게임 해커톤 https://github.com/gayoungaa91/FDS-card91/tree/develop
-- 개인 포트폴리오 https://github.com/gayoungaa91/portfolio/tree/master/project/portfolio-leegayoung
+- 야놀자 클론 프로젝트 
+  -  http://yanoljamvp.com
+  - https://github.com/gayoungaa91/yanolja-frontend 
+- 카드 맞추기 게임 해커톤 
+  - https://github.com/gayoungaa91/FDS-card91/tree/develop
+- 개인 포트폴리오 
+  - http://gayoungaa91.dothome.co.kr
+  - https://github.com/gayoungaa91/portfolio/tree/master/project/portfolio-leegayoung
