@@ -3,7 +3,6 @@
 ## Today I Learned 
 - React
   - 리액트 스터디 진행중
-  - 리액트를 다루는 기술 책 참고하여 정리
   
 - JS
   - poiema 블로그 참고하여 정리
