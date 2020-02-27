@@ -1,8 +1,8 @@
-# yanolja clone project 
+## yanolja clone project 
 야놀자 front-end repo https://github.com/gayoungaa91/yanolja-frontend<br>
 야놀자 project site http://yanoljamvp.com/
 
-## 메인
+### 메인
 #### 1) 야놀자 사이트 클론
 #### 2) 홈페이지 디자인 
 #### 3) UX를 고려한 기능추가
