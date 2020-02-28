@@ -3,7 +3,6 @@ import CardRandom from './CardRandom';
 import './App.css';
 
 
-
 function App() {
   return (
     <div>
