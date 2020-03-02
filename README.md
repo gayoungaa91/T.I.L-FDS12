@@ -15,11 +15,7 @@
 > <a href="https://github.com/gayoungaa91/FDS-card91/tree/develop">카드 맞추기 게임 해커톤</a>
 - 패스트캠퍼스 스쿨내에서 진행한 미니 해커톤
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/project/portfolio-leegayoung">개인 포트폴리오</a> / http://gayoungaa91.dothome.co.kr
-
-
-
-
-
+<br>
 ## Today I Learned 
 
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/T.I.L/React/study-group">React</a>
