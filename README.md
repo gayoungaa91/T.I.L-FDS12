@@ -3,7 +3,7 @@
 
 
 
-### project
+## project
 
 > <a>리액트 스터디</a> 
 
@@ -16,9 +16,9 @@
 - 패스트캠퍼스 스쿨내에서 진행한 미니 해커톤
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/project/portfolio-leegayoung">개인 포트폴리오</a> / http://gayoungaa91.dothome.co.kr
 
+<hr>
 
-
-### Today I Learned 
+## Today I Learned 
 
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/T.I.L/React/study-group">React</a>
 - 현재 진행중) 리액트 스터디 / 리액트를 다루는 기술 책 참고
