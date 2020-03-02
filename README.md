@@ -1,5 +1,5 @@
 # Portfolio
-##### : project 및 til ( Javascript, React, HTML5, CSS3) 학습후 매일 기록
+#### : project 및 til ( Javascript, React, HTML5, CSS3) 학습후 매일 기록
 
 
 
