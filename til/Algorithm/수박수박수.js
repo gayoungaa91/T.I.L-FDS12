@@ -5,9 +5,9 @@
 // n은 길이 10,000이하인 자연수입니다.
 
 function solution(n) {
-  let waterMelon = [];
-  for(let i = 0; i < n; i++)
-      waterMelon.push(i%2?'박':'수')
-
-  return waterMelon.join('');
+  var answer = '';
+  for(let i = 0; i < n; i++) {
+      answer += i % 2 ? '박' : '수'; 
+  }
+  return answer;
 }
