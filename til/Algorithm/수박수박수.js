@@ -5,9 +5,9 @@
 // n은 길이 10,000이하인 자연수입니다.
 
 function solution(n) {
-  var answer = '';
+  let answer = '';
   for(let i = 0; i < n; i++) {
-      answer += i % 2 ? '박' : '수'; 
+    answer += i % 2 ? '박' : '수'
   }
   return answer;
 }
