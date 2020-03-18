@@ -1,7 +1,4 @@
 function solution (str) {
-  let answer = [];
-  answer = str.split('');
-  answer = answer.reverse();
-  answer = answer.join('');
+  let answer = str.split('').sort().reverse().join('');
   return answer;
 }
