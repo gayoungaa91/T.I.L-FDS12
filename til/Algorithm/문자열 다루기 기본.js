@@ -5,6 +5,11 @@
 // s는 길이 1 이상, 길이 8 이하인 문자열입니다.
 
 function solution(s) {
-  var answer = true;
+  let answer;
+  if((s.length === 4 || s.length === 6) && !isNaN(s)) {
+      answer = true
+  } else {
+      answer = false
+  }
   return answer;
 }
