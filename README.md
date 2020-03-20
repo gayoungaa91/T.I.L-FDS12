@@ -22,6 +22,7 @@
 - 리액트 스터디 / 리액트를 다루는 기술 책 참고
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/T.I.L/JS">JavaScript</a>
 - 자바스크립트의 이론 및 실습 / <a href="https://poiemaweb.com/">poiema 블로그</a> - 이웅모 강사님
+- 게임 만들기 실습
 ><a href="https://github.com/gayoungaa91/portfolio/tree/master/T.I.L/html%20%26%20css">HTML5 & CSS</a>
 - 시맨틱한 마크업을 적용한 WebCafe 사이트 실습 / 김데레사 강사님
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/Algorithm">알고리즘</a>
