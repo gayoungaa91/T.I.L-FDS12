@@ -26,5 +26,5 @@
 ><a href="https://github.com/gayoungaa91/portfolio/tree/master/til/HTML5%20%26%20CSS3">HTML5 & CSS</a>
 - 시맨틱한 마크업을 적용한 WebCafe 사이트 실습 / 김데레사 강사님
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/Algorithm">알고리즘</a>
-- 프로그래머스 알고리즘 풀이
+- 프로그래머스 알고리즘 풀이 / 진행중 
 
