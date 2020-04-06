@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>game test</title>
+</head>
+<body>
+  <span class="span">
+    끝말잇기
+  </span>
+  <span></span>
+  <input type="text" class="input"> 
+  <script>
+    const $input = document.querySelector('.input');
+    
+    for(let word = '이가영'; true;) {
+      let answer = prompt(word)
+      if(word[word.length-1] === answer[0]) {
+        alert('증답!')
+        word = answer;
+      } else {
+        alert('때앵!')
+      }
+    }
+  </script>
+  
+</body>
+</html>
