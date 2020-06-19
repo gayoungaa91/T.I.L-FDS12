@@ -1,12 +1,12 @@
 # Portfolio
-#### : project 및 til ( Javascript, React, HTML5, CSS3) 학습후 매일 기록
+#### : project 및 til ( Javascript, HTML5, CSS3) 학습후 매일 기록
 <br>
 
 ## project
 
 > <a>리액트 스터디</a> 
 
-- 2020.01 ~ 현재 진행중
+- 2020.01 
 
 > <a href="https://github.com/gayoungaa91/yanolja-frontend ">야놀자 클론 프로젝트</a> / http://yanoljamvp.com
 
