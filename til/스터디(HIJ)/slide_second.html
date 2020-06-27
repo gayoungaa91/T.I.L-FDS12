@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slide</title>
+  <style>
+    * {list-style: none;}
+    ul {overflow: hidden;}
+    li {width: 100px; height: 100px; border: 1px solid red; font-size: 40px; float: left;}
+    li.on {border: 5px solid blue;}
+  </style>
+</head>t
+<body>
+  <ul class="slide-main">
+    <li class="on">1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
+  <!-- <ul class="slide-sub">
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+  </ul>
+  <ul class="slide-box">
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul> -->
+  <button id="prev">prev</button>
+  <button id="next">next</button>
+  <script src="./slide.js" type="text/javascript"></script>
+  <script>
+    var MySlideMain = new MySlide({
+      element : '.slide-main'
+    });
+    
+    // var MySlideSub = new Myslide({
+    //   element : '.slide-sub'
+    // });
+
+    // var MyslideEtc = new Myslide();
+  </script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+@import "./reset.css";
+
+body {
+  background-color: #fff;
+  min-width: 960px;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.header {
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  position: relative;
+  width: 960px;
+  height: 66px; 
+  margin: 0 auto;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #444;
+  /* border-bottom: 3px solid #3b3b3b; */
+  /* float: left; */
+}
+
+.logo a {
+  background:url(../image/LINE_Corporation_Logo.png) 0 0 no-repeat;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 60px; 
+  height: 21px; 
+  background-size: 60px 21px;
+  display: block;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+/* 네비게이션 */
+.gnv { margin-left: 78px; }
+.gnv ul { position: relative; }
+.gnv li { float: left; line-height: 66px; }
+.gnv li a {  color: #444;}
+.gnv li span { 
+  display: inline-block; 
+  width: 0;
+  overflow: hidden;
+  margin-right: 13px;
+  margin-left: 10px;
+  border-left: 1px solid #cfcfcf;
+  vertical-align: -1px;
+  height: 12px;
+}
+
+.h-list-box {
+  position: relative;
+  float: right; 
+}
+.h-list { float: left; }
+.h-list select {
+  margin-top: 21px;
+  width: 129px;
+  height: 22px;
+  padding: 0 10px 0 9px;
+  border: 1px solid #dfdfdf;
+  font-size: 12px;
+  color: #444;
+  cursor: pointer;
+  background: url('이미지 경로') no-repeat 95% 50%; /* 네이티브 화살표를 커스텀 화살표로 대체 */
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  -webkit-appearance: none; /* 네이티브 외형 감추기 */
+  -moz-appearance: none;
+  appearance: none;
+}
+.h-link {
+  margin-top: 24px;
+  vertical-align: top;
+  margin-left: 12px;
+}
+.h-link a { color: #444; }
+
+/* 슬라이더 */
+.sliders {
+  /* background-image: url("https://d.line-scdn.net/stf/line-lp/Korean0906.png"); */
+  /* background-repeat: no-repeat; */
+  /* background: powderblue; */
+  /* border-top: 3px solid #3b3b3b; */
+  /* height: 440px; */
+  position: relative;
+  overflow: hidden;
+}
+.slider-info {
+  height: 440px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider01 {
+  background: powderblue;
+  border-top: 3px solid #3b3b3b;
+  /* height: 440px; */
+  position: relative;
+}
+.slider02 {
+  background: orange;
+  border-top: 3px solid #3b3b3b;
+  /* height: 440px; */
+  position: relative;
+}
+.slider03 {
+  background: palegreen;
+  border-top: 3px solid #3b3b3b;
+  /* height: 440px; */
+  position: relative;
+}
+.slider04 {
+  background: plum;
+  border-top: 3px solid #3b3b3b;
+  /* height: 440px; */
+  position: relative;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 17px;
+  margin: 0 auto;
+  width: 100%;
+  height: 16px;
+  text-align: center;
+  z-index: 3;
+  background: hotpink;
+}
+.slider-dots li {
+  margin-left: 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.slider-dots a {
+  width: 12px;
+  height: 12px;
+  background-position: -887px 0;
+}
+
+/* 메인기능섹션 */
+  .functions {
+    border: 3px solid royalblue;
+    width: 1260px;
+    margin: 0 auto;
+    padding-bottom: 93px;
+    padding-top: 88px;
+  }
+  .function-box { 
+    margin-top: 0;
+    border: 1px steelblue solid;
+  }
+  .function-box::after { content:''; display: block; clear: both; }
+
+  /* 이미지 왼쪽 배치 섹션 */
+  .img-box-left {
+    float: left; 
+    /* background-image: url("https://d.line-scdn.net/stf/line-lp/PC_LINE_Store_ko.png"); */
+    width: 630px;
+    border: 2px solid orange;
+  }
+  .img-box-left img { margin-right: 30px; }
+  .func-text-right {
+    width: 450px;
+    border: 2px solid orangered;
+    float: left;
+    margin-left: 30px;
+    word-wrap: break-word;
+  }
+  /* 이미지 오른쪽 배치 섹션 */
+  .img-box-right {
+    float: right;
+    width: 630px;
+    border: 2px solid green;
+  }
+  .func-text-left {
+  border: 2px solid greenyellow;
+  width: 450px;
+  float: left;
+  margin-left: 150px;
+  word-wrap: break-word;
+  }
+  .func-ex02 {
+    margin-bottom: 20px;
+  }
+  /* 기능들 디자인 디테일 */
+  .function-title {
+    margin-top: 47px;
+    font-size: 54px;
+    line-height: 1.1;
+    margin-left: -5px;
+    font-weight: normal;
+    color: inherit;
+  }
+  .function-explain {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: inherit;
+    font-weight: normal;
+  }
+
+  /* 부가기능섹션  */
+  .addition {
+    margin: 120px auto 115px;
+    width: 960px;
+    height: 887px;
+    border: 3px solid lightcoral;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: calc(100%/3);
+  }
+  .addition-box {
+    border: 1px solid brown;
+    width: 288px;
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .add-img-box img { vertical-align: top; }
+  .addition-box a {
+    background: yellow;
+    margin-left: 8px;
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: top;
+  }
+
+  .addition-title {
+    margin-top: 15px;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: bold;
+    word-wrap: break-word;
+  }
+  .addition-explain {
+    border: 1px solid tomato;
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+  }
+  .add-play {
+    margin-right: calc(100%/3);
+    position: relative;
+  }
+
+  /* 푸터 */
+  .footer {
+    /* position: absolute; */
+    /* bottom: 0; */
+    background: #3b3b3b;
+    width: 100%;
+    padding: 26px 0 28px;
+  }
+  .footer-wrapper {
+    overflow: hidden;
+    text-align: center;
+  }
+  .footer-wrapper ul {
+    position: relative;
+    display: block;
+    width: 960px;
+    font-size: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-wrapper li {
+    margin-left: 0;
+    display: inline-block;
+    font-size: 12px;
+  }
+  .footer-wrapper li a {
+    color: #838383;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 2;
+  }
+  .footer-wrapper span {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    margin-right: 9px;
+    margin-left: 7px;
+    border-left: 1px solid #494949;
+    vertical-align: -1px;
+    height: 10px;
+  }
+  .footer-title {
+    margin-top: 1px;
+    color: #838383;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
