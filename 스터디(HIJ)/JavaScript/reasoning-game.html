@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      height: 100%;
+    }
+    .container {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px 20px;
+    }
+    .result-box {
+      display: flex;
+      align-items:center;
+    }
+
+   
+  </style>
+  <title>game</title>
+</head>
+<body>
+  <div class="container">
+    <h1>숫자 맞추기 게임</h1>
+    <p>1~100까지 숫자중 임의의 숫자를 골라 맞춰주세요.</p>
+    <input type="text" class="input" placeholder="숫자를 입력해 주세요">
+    <button class="checkBtn">체크</button>
+    <div class="result-box">
+      <span>정답 확인: </span>
+      <p class="resultCheck"></p>
+    </div>
+  </div>
+  <script>
+    const $input = document.querySelector('.input');
+    let $answer = document.querySelector('.resultCheck');
+    let randomNum = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+
+    function init() {
+      $input.addEventListener('keyup', (e) => {
+        console.log(randomNum);
+        if(e.keyCode === 13){
+          let value = e.target.value;
+          if(randomNum > value) {
+            $input.value = '';         
+            $answer.innerHTML = ` ${value}보다 큽니다. 다시 시도해 주세요.`
+          } 
+          else if (randomNum < value) {
+            $input.value = ''; 
+            $answer.innerHTML = ` ${value}보다 작습니다. 다시 시도해 주세요.`
+          } else { 
+            $input.value = ''; 
+            $answer.innerHTML = ` 축하합니다. 정답입니다!`
+            }
+        }
+      })
+    }
+    init();
+  </script>  
+</body>
+</html>
