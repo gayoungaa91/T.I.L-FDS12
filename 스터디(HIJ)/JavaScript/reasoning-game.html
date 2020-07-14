@@ -5,31 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      height: 100%;
+      height: 100vh;
     }
     .container {
-      width: 100%;
+      margin-top: 50px;
+    }
+    .game-wrapper {
+      width: 500px;
+      padding: 30px;
+      border: 1px solid black;
       margin: 0 auto;
-      padding: 10px 20px;
     }
     .result-box {
       display: flex;
       align-items:center;
+      margin-top: 10px;
     }
-
-   
+    .result-box span {
+      font-size: 20px;
+    }
+    .result-box p {
+      font-size: 20px;
+      margin-left: 10px;
+      color:maroon
+    }
+    h1 {
+      font-size: 30px;
+      line-height: 0.5em;
+    }
+    .input {
+      width: 200px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-right: 5px;
+    }
+    .checkBtn {
+      width: 50px;
+      height: 45px;
+      background: powderblue;
+      border: 1px solid powderblue;
+      border-radius: 5px;
+    }
   </style>
   <title>game</title>
 </head>
 <body>
   <div class="container">
-    <h1>숫자 맞추기 게임</h1>
-    <p>1~100까지 숫자중 임의의 숫자를 골라 맞춰주세요.</p>
-    <input type="text" class="input" placeholder="숫자를 입력해 주세요">
-    <button class="checkBtn">체크</button>
-    <div class="result-box">
-      <span>정답 확인: </span>
-      <p class="resultCheck"></p>
+    <div class="game-wrapper">
+      <h1>숫자 맞추기 게임</h1>
+      <p>1~100까지 숫자중 임의의 숫자를 골라 맞춰주세요.</p>
+      <input type="text" class="input" placeholder="숫자를 입력해 주세요">
+      <button class="checkBtn">enter</button>
+      <div class="result-box">
+        <span>정답 확인: </span>
+        <p class="resultCheck"></p>
+      </div>
     </div>
   </div>
   <script>
@@ -49,9 +81,14 @@
           else if (randomNum < value) {
             $input.value = ''; 
             $answer.innerHTML = ` ${value}보다 작습니다. 다시 시도해 주세요.`
-          } else { 
+          }
+          else if (randomNum === value) {
             $input.value = ''; 
-            $answer.innerHTML = ` 축하합니다. 정답입니다!`
+            $answer.innerHTML = ` 축하합니다. 정답입니다 :D.`
+          } 
+          else { 
+            $input.value = ''; 
+            $answer.innerHTML = `잘못된 입력입니다. 다시 시도해 주세요.`
             }
         }
       })
