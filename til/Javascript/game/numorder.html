@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>순서대로 숫자를 누를 게임</title>
+  <style>
+    div {width: 100px; height: 100px; border: 1px solid #444;}
+    .box { border: 1px solid orange;}
+  </style>
+</head>
+<body>
+  <!-- <div class="wrapper"> -->
+    <!-- <div class="container"> -->
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+    <!-- </div> -->
+  <!-- </div> -->
+  <script>
+    // 9개의 랜덤숫자를 하나씩 넣은 빙고판을 만든다.
+
+    let $row = document.querySelectorAll('.row');
+    let row = [...$row]
+    let bingoNum = 3;
+    let div = document.createElement('div')
+
+    row.forEach(tag => {
+      tag.innerHtml = `<div>ㅋ</div>`
+    })
+
+    // for(let i = 0; i < bingoNum; i++) {
+    //   $row.innerHTML += `<div>ㅋㅋ</div>`
+    //   for(let j = 0; j < bingoNum; j++) {
+    //   }
+
+    
+    
+    
+  </script>
+</body>
+</html>
