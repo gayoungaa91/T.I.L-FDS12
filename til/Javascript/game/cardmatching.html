@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>카드 짝 맞추기 게임</title>
   <style>
-    .card {width: 100px; height: 150px; border: 1px solid black; display: inline-block;}
-    .card-inner {position: relative; width: 100%; height: 100%; text-align: center; text-align: center; transition: trasform 0.8s; transform-style: preserve-3d;}
+    .card {width: 70px; height: 100px; display: inline-block; margin: 20px; perspective: 140px;}
+    .card-inner {position: relative; width: 100%; height: 100%; text-align: center; transform-style: preserve-3d; transition: transform 0.8s;}
     .card.flipped .card-inner {transform: rotateY(180deg);}
-    .card-front .card-back {position: absolute; width: 100%; height: 100%; backface-visibility: hidden;}
+    .card-front {background: darkblue;}
+    .card-back {background: plum;}
+    .card-front, .card-back {position: absolute; width: 100%; height: 100%; backface-visibility: hidden;  border: 1px solid black;}
     .card-back {transform: rotateY(180deg);}
   </style>
 </head>
@@ -23,6 +25,6 @@
       </div>
     </div>
   </div> -->
-  <script src="cardmatchimg.js"></script>
+  <script src="./cardmatching.js"></script>
 </body>
 </html>
