@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <Sample />
+    <Other  />
   </div>
 </template>
 
 <script>
 
 import Sample from './pages/Sample.vue'
+import Other from './pages/Other.vue'
 
 export default {
   name: 'App',
   components: {
-    Sample
+    Sample,
+    Other
   },
   data () {
     return {
