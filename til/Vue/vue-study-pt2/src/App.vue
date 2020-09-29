@@ -1,25 +1,17 @@
 <template>
   <div id="app">
-    <!-- <dashboard></dashboard> -->
-    <!-- <router-link to='/'>home</router-link>
-    <router-link to='/page1'>page1</router-link>
-    <router-link to='/page2'>page2</router-link>
-    <router-link to='/location'>page3</router-link> -->
-    현재 보고 계신 페이지는 {{url}} 입니다
-    <Layout />
+    <Sample />
   </div>
 </template>
 
 <script>
 
-import Layout from './Layout/Layout.vue';
-// import Dashboard from './components/Dashboard.vue';
+import Sample from './pages/Sample.vue'
 
 export default {
   name: 'App',
   components: {
-    // 'dashboard': Dashboard
-    Layout
+    Sample
   },
   data () {
     return {
