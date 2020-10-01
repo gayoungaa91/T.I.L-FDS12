@@ -9,7 +9,7 @@ Project & TIL
 - 야놀자 홈페이지 클론에 프론트엔드로 참여 (프론트엔드 4명, 백엔드 3명, IOS 3명)
 > <a href="https://github.com/gayoungaa91/FDS-card91/tree/develop">카드 맞추기 게임 해커톤</a>
 - 패스트캠퍼스 스쿨내에서 진행한 미니 해커톤
-<br>
+
 
 ## Today I Learned 
 
