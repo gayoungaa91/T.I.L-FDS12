@@ -2,3 +2,8 @@
 
 // 제한 조건
 // n은 1이상 8000000000 이하인 자연수입니다.
+
+function solution(n) {
+  var answer = 0;
+  return answer;
+}
