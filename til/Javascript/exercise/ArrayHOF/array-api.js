@@ -46,6 +46,8 @@ const students = [
 
 // Q5. find a student with the score 90
 {
+  const result = students.find((student) => student.score === 90)
+  // console.log(result)
 }
 
 // Q6. make an array of enrolled students
@@ -89,5 +91,5 @@ const students = [
   const result = students.map((student) => student.score)
   .sort((a, b) => a - b)
   .join();
-  console.log(result)
+  // console.log(result)
 }
