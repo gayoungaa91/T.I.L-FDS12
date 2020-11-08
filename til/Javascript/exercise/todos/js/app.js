@@ -33,21 +33,34 @@ function renderTodos() {
   })
 
   $todos.innerHTML = html;
-  
+  completedTodos();
+  unCompletedTodos();
+}
+
+// 아이디 생성
+function generateId() {
+  return todos.length ? Math.max(...todos.map(todo => todo.id)) + 1 : 1;
 }
 
 // todolist 새로 추가
   $input.addEventListener('keydown', (e) => {
-    if(e.key === 'Enter') {
-      $todos.innerHTML = `
-      <li id="myId" class="todo-item">
-        <input class="custom-checkbox" type="checkbox" id="ck-myId">
-        <label for="ck-myId">${$input.value}</label>
-        <i class="remove-todo far fa-times-circle"></i>
-      </li>
-      `
-    }
+    const content = $input.value.trim();
+    if(e.keyCode !== 13 || content === '') return;
+
+    $input.value = '';
+    todos = [{id: generateId(), content, completed: false},...todos];
+    renderTodos();
   })
+  
+  // input 체크박스 
+  $todos.addEventListener('change', e => {
+    const id = +e.target.parentNode.id;
+    // console.log(id)
+    todos = todos.map(todo => (todo.id === id ? {...todo, completed: !todo.completed} : todo));
+    console.log(todos);
+    renderTodos();
+
+  });
 
 
 renderTodos();
