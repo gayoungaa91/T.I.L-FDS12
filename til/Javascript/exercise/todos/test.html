@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<head>
-  <style>
-    .red { color: red; }
-    .blue { color: blue; }
-  </style>
-</head>
 <html>
-  <body>
-    <ul id="fruits">
-      <li class="red">Apple</li>
-      <li class="red">Banana</li>
-      <li class="red">Orange</li>
-    </ul>
-    <script>
-      // class 값이 'red'인 요소 노드를 모두 탐색하여 HTMLCollection 객체에 담아 반환한다.
-      const $elems = document.getElementsByClassName('red');
-      // 이 시점에 HTMLCollection 객체에는 3개의 요소 노드가 담겨 있다.
-      console.log($elems); // HTMLCollection(3) [li.red, li.red, li.red]
+<body>
+  <input type="text">
+  <input type="checkbox">
+  <button>Click me!</button>
+  <script>
+    const $input = document.querySelector('input[type=text]');
+    const $checkbox = document.querySelector('input[type=checkbox]');
+    const $button = document.querySelector('button');
 
-      // HTMLCollection 객체의 모든 요소의 class 값을 'blue'로 변경한다.
-      for (let i = 0; i < $elems.length; i++) {
-        $elems[i].className = 'blue';
-      }
+    // load 이벤트가 발생하면 Event 타입의 이벤트 객체가 생성된다.
+    // window.onload = console.log;
 
-      // HTMLCollection 객체의 요소가 3개에서 1개로 변경되었다.
-      console.log($elems); // HTMLCollection(1) [li.red]
-    </script>
-  </body>
+    // change 이벤트가 발생하면 Event 타입의 이벤트 객체가 생성된다.
+    $checkbox.onchange = console.log;
+
+    // focus 이벤트가 발생하면 FocusEvent 타입의 이벤트 객체가 생성된다.
+    // $input.onfocus = console.log;
+
+    // input 이벤트가 발생하면 InputEvent 타입의 이벤트 객체가 생성된다.
+    // $input.oninput = console.log;
+
+    // keyup 이벤트가 발생하면 KeyboardEvent 타입의 이벤트 객체가 생성된다.
+    // $input.onkeyup = console.log;
+
+    // click 이벤트가 발생하면 MouseEvent 타입의 이벤트 객체가 생성된다.
+    // $button.onclick = console.log;
+  </script>
+</body>
 </html>
