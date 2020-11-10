@@ -4,11 +4,10 @@ let todos = [
   { id: 3, content: 'Javascript', completed: false }
 ];
 
-let $todos = document.querySelector('.todos');
+const $todos = document.querySelector('.todos');
 const $input = document.querySelector('.input-todo');
-// // let checkBox = document.createElement('')
-// let list = document.createElement('li');
-// // console.log($ul)
+const $completAll = document.querySelector('#ck-complete-all');
+const $btn = document.querySelector('.btn');
 
 // completed 개수
 function completedTodos() {
@@ -31,7 +30,6 @@ function renderTodos() {
       <i class="remove-todo far fa-times-circle"></i>
     </li>`
   })
-
   $todos.innerHTML = html;
   completedTodos();
   unCompletedTodos();
@@ -43,24 +41,43 @@ function generateId() {
 }
 
 // todolist 새로 추가
-  $input.addEventListener('keydown', (e) => {
-    const content = $input.value.trim();
-    if(e.keyCode !== 13 || content === '') return;
+$input.addEventListener('keydown', (e) => {
+  const content = $input.value.trim();
+  if(e.keyCode !== 13 || content === '') return;
 
-    $input.value = '';
-    todos = [{id: generateId(), content, completed: false},...todos];
-    renderTodos();
-  })
-  
-  // input 체크박스 
-  $todos.addEventListener('change', e => {
-    const id = +e.target.parentNode.id;
-    // console.log(id)
-    todos = todos.map(todo => (todo.id === id ? {...todo, completed: !todo.completed} : todo));
-    console.log(todos);
-    renderTodos();
+  $input.value = '';
+  todos = [{id: generateId(), content, completed: false},...todos];
+  renderTodos();
+})
+      
+// input 체크박스 
+$todos.addEventListener('change', e => {
+  const id = +e.target.parentNode.id;
+  todos = todos.map(todo => (todo.id === id ? {...todo, completed: !todo.completed} : todo));
+  console.log(todos);
+  renderTodos();
+});
 
-  });
+// remove 버튼
+$todos.addEventListener('click', e => {
+  if(!e.target.classList.contains('remove-todo')) return;
+  todos = todos.filter(todo => todo.id !== +e.target.parentNode.id);
+  renderTodos();
+})
+
+$completAll.addEventListener('change', e => {
+  if (e.target.checked) {
+    todos = todos.map(todo => ({...todo, completed: true}))
+  } else todos = todos.map(todo => ({...todo, todo, completed: false}))
+  renderTodos();
+})
+
+// clear btn 클릭시 완료된 todo 삭제
+$btn.addEventListener('click', () => {
+  todos = todos.filter(todo => todo.completed !== true);
+  renderTodos();
+})
+
 
 
 renderTodos();
