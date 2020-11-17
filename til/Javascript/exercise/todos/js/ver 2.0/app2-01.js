@@ -9,7 +9,11 @@ const $completeLeng = document.querySelector('.completed-todos');
 const $activeLeng = document.querySelector('.active-todos');
 const $addTodo = document.querySelector('.input-todo');
 const $nav = document.querySelector('.nav');
+const $allComplete = document.querySelector('.custom-checkbox');
+const $clearBtn = document.querySelector('.btn');
+
 let navState = 'all';
+let _todos = [...todos];
 // 렌더링 함수
 // 호출될때 결과값을 그려준다.
 // 새로 그려줘야 한다.
@@ -17,14 +21,16 @@ let navState = 'all';
 // (탭을 클릭하면) 나눠서 보여줘야 한다.
 // active, 완료되지 않은목록
 function render() {
-  if($nav.navState === 'Active') {
-    todos = todos.filter(todo => !todo.completed)
-  } else if ($nav.navState === 'Completed') {
-    todos = todos.filter(todo => todo.completed)
+  if(navState === 'all') {
+   _todos = todos;
+  } else if (navState === 'active') {
+    _todos = todos.filter(todo => !todo.completed)
+  } else { 
+    _todos = todos.filter(todo => todo.completed)
   }
 
   let html = '';
-  todos.forEach(({id, content, completed}) => 
+  _todos.forEach(({id, content, completed}) => 
     html += `<li id="${id}" class="todo-item">
       <input class="custom-checkbox" type="checkbox" id="ck-${id}" ${completed ? 'checked' : ''}>
       <label for="ck-${id}">${content}</label>
@@ -37,7 +43,7 @@ function render() {
   $completeLeng.innerHTML = todos.filter(todo => todo.completed).length;
   $activeLeng.innerHTML = todos.filter(todo => !todo.completed).length;
 }
-render();
+
 
 // 아이디 생성
 function generateId() {
@@ -66,5 +72,34 @@ $todos.addEventListener('change', e => {
 
 // 액티브 클래스
 $nav.addEventListener('click', e => {
-  console.log([...$nav])
+  [...$nav.children].forEach((navItem) => {
+    if(navItem.id === e.target.id) navItem.classList.add('active');
+    else {navItem.classList.remove('active')};
+  });
+  // id값 할당
+  navState = e.target.id;
+  render();
 })
+
+// x버튼 클릭시 삭제
+$todos.addEventListener('click', e => {
+  const id = +e.target.parentNode.id
+  if(!e.target.classList.contains('remove-todo')) return; 
+  todos = todos.filter(todo => todo.id !== id);
+  render();
+})
+
+// 클릭시 전체선택 & 해제
+$allComplete.addEventListener('click', e => {
+  if(e.target.checked) todos = todos.map(todo => ({...todo, completed: true}))
+  else todos = todos.map(todo => ({...todo, completed: false}))
+  render();
+})
+
+// clear btn 클릭시 완료된 todo 버려짐
+$clearBtn.addEventListener('click', ()=> {
+  todos = todos.filter(todo => !todo.completed)
+  render
+})
+
+render();

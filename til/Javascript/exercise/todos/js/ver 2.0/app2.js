@@ -103,7 +103,7 @@ $nav.addEventListener('click', e => {
 $todos.addEventListener('click', e => {
   const id = +e.target.parentNode.id;
   if(!e.target.classList.contains('remove-todo')) return;
-  todos = todos.filter(todo => [...todo, ])
+  todos = todos.filter(todo => todo.id !== id)
   render();
 })
 
