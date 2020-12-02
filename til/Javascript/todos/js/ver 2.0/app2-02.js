@@ -41,7 +41,7 @@ let navState = 'all';
 //   $todos.innerHTML = html;
 // }
 function render() {
-  const _todos = todos.filter((todo) => {
+  _todos = todos.filter((todo) => {
     if (navState === 'active') return !todo.completed;
     if (navState === 'completed') return todo.completed;
     return true;

@@ -1,12 +1,7 @@
 import React from 'react';
 
-function Wrapper({ children}) {
-  const style = {
-    border: '2px solid black',
-    padding: 16
-  };
-
-return <div style={style}>{children}</div>
+function Wrapper() {
+  return <div>wrapper 입니다</div>
 }
 
 export default Wrapper;
