@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { UserDispatch } from './App'
+import { UserDispatch } from './App2'
 
 const User = React.memo(function User({user}) {
   const{username, email, id, active} = user;

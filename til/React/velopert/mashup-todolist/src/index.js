@@ -3,18 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux'; //스토어
-import rootReducer from './modules'; // 알아서 index.js 루트 리듀서가 불러와짐
-import { composeWithDevTools } from 'redux-devtools-extension';
-
-const store = createStore(rootReducer, composeWithDevTools());
 
 ReactDOM.render(
-  // 스토어를 어디서든지 갖다 쓸수 있음
-  <Provider store={store}>
+  <React.StrictMode>
     <App />
-  </Provider>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

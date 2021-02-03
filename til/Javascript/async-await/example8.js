@@ -1,0 +1,1 @@
+// 연속된 Promise 연속된 async await 처리 비교
