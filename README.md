@@ -11,8 +11,6 @@
 
 ## Today I Learned 
 
-> <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/Vue">Vue</a>
-- 뷰 스터디
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/Javascript">JavaScript</a>
 - 자바스크립트의 이론 및 실습 / <a href="https://poiemaweb.com/">poiema 블로그</a> - 이웅모 강사님
 - 게임 만들기 실습
