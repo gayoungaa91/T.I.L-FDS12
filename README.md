@@ -1,4 +1,4 @@
-# project
+## project
 
 >
 
@@ -6,7 +6,7 @@
 
 - 야놀자 홈페이지 클론에 프론트엔드로 참여 (프론트엔드 4명, 백엔드 3명, IOS 3명)
 
-# Today I Learned
+## Today I Learned
 
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/Javascript">JavaScript</a>
 
