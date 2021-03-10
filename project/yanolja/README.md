@@ -1,7 +1,6 @@
 ## 야놀자 홈페이지 클론 프로젝트
 
-프로젝트 참여인원: 프론트엔드 4명, 백엔드 3명, IOS 3명<br>
-https://github.com/gayoungaa91/yanolja-frontendx
+프로젝트 참여인원: 프론트엔드 4명, 백엔드 3명, IOS 3명 (https://github.com/gayoungaa91/yanolja-frontendx)
 
 > 담당 페이지
 
