@@ -17,4 +17,4 @@
 - <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/Javascript">JavaScript</a><br>
 - <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/React">React</a><br>
 - <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/HTML5%20%26%20CSS3">HTML5 & CSS</a><br>
-- <a href="https://github.com/gayoungaa91/portfolio/tree/master/til/Algorithm">알고리즘</a>
+
