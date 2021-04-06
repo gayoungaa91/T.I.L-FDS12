@@ -10,7 +10,7 @@
 
 > <a href="https://github.com/gayoungaa91/portfolio/tree/master/project/yanolja">야놀자 홈페이지 클론</a>
 
-- 야놀자 홈페이지 클론을 앵귤러로 구현하며 프론트엔드 팀원 구성원으로 참여 (프론트엔드 4명, 백엔드 3명, IOS 3명)
+- 야놀자 홈페이지 클론을 앵귤러로 구현하며 프론트엔드 팀원 구성원으로 참여
 
 ## Today I Learned
 
