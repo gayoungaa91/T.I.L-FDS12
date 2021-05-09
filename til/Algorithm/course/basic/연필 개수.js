@@ -12,8 +12,8 @@
 // solution(180);
 
 // 2
-function solution(n) {
-  let answer = Math.ceil(n / 12);
-  return answer;
-}
-console.log(solution(180));
+// function solution(n) {
+//   let answer = Math.ceil(n / 12);
+//   return answer;
+// }
+// console.log(solution(180));
